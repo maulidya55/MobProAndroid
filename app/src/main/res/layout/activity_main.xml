@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/masukanangka"
+        android:textSize="30dp"
+
+        />
+    <EditText
+        android:id="@+id/angkasatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Angka"
+        android:inputType="number"
+        android:layout_below="@+id/text1"
+     />
+    <EditText
+        android:id="@+id/angkadua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Angka"
+        android:inputType="number"
+        android:layout_below="@+id/angkasatu"
+        />
+
+    <LinearLayout
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkadua"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tambah"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:onClick="tambah"
+            android:text="@string/tambah"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/kurang"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:onClick="kurang"
+            android:text="@string/kurang"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/kali"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:onClick="kali"
+            android:text="@string/kali"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bagi"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:onClick="bagi"
+            android:text="@string/bagi"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:onClick="clear"
+            android:text="@string/clear"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/hasil"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/jumlahhasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_below="@id/hasil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+
+</RelativeLayout>
+

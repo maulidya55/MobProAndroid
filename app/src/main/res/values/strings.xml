@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assessment1</string>
+    <string name="masukanangka">Silahkan Masukan Angka</string>
+    <string name="tambah">+</string>
+    <string name="kurang">-</string>
+    <string name="bagi">/</string>
+    <string name="kali">*</string>
+    <string name="hasil">Hasil</string>
+    <string name="clear">C</string>
+</resources>
